@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO YOU MY LOVE!!!</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f1fe;
+            color: #4a4a4a;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 50vh;
+            box-sizing: border-box;
+        }
+        .btn {
+            background-color: #8e44ad;
+            color: #fff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .btn:hover {
+            background-color: #732d91;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            width: 80%;
+            max-width: 600px;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .modal.show {
+            display: block;
+            opacity: 1;
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #f9f1fe;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #8e44ad;
+        }
+        h1 {
+            color: #8e44ad;
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        p {
+            font-size: 16px;
+            color: #555;
+            text-align: left;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            color: #8e44ad;
+            font-weight: 600;
+        }
+        .footer {
+            font-size: 20px;
+            color: #8e44ad;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .modal {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- BUTTON -->
+<button class="btn" onclick="openModal()">CLICK TO SEE MY LOVE 💖</button>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+    <button class="close-btn" onclick="closeModal()">×</button>
+    <h1>TO YOU MY LOVE!!! 💖</h1>
+    <p>
+        <span class="highlight">Akasheyyyyyyyyyy</span>.....unaku ipo oru bag kaiku vandhurukum...aama shirt unakaaga...
+        andha shirt ku oru kadha iruku...first uu full hand vaangalam nu dhan irundhen aana
+        nee half hand poda knjm yosipala nu half hand vaangunen aprm unta ketapo kuda gym poi
+        arms vechu naa half hand poduven nu sonna adhan okk motivated aa feel pannuvanu vaangunen...
+        aprm yen black nu kepa...adhukum reason iruku...white la nee camouflage aagiduviye adhan black vaangunen...
+        unaku black alagaa irukum akasheyyyyyyyyyy 😽🤌✨ unta formal neraya iruku adhan formal vaangalaa...
+        mudinja train ku idha potu vaa...aprm un size enaku theriyadhu summa 40 ku vaanginen...
+        namakku oru conversation pochu la shirt size vechu apo kuda nee oru size sonna adhan en appa kum nu naa sonnen
+        so naa enta irukura appa t shirt size 40 so adhan unakum poten naa andha shirt potu paathen en kai
+        elbow vara sleeve irunchu...batman shirt kuda en elbow vara dhan irukum adhu unaku crt aa irundhudhulaa
+        apo idhum irukum nu nambhuren...crt aa illanal sorry paa...indha shirt muluka muluka unaku irukura insecure
+        thoughts about your looks aa break pannadhan....even andha half sleeve part kuda naa nee sonna oru vishayatha
+        vechi dhan vaangunen...unaku allergy vandhuchulaa adhunaala nee half sleeve podave pudikala nu sonna...
+        adhan naa unaku half sleeve vaangunen...paa yaaru enna sonnalum enaku unna rombha pudikum nee alagaa dhan irukaa!!!
+        apidi kaaturadhuku dhan indha shirt vaangi kuduthen!!! Adhan Akasheyyyyyyyyyy...
+    </p>
+    <div class="footer">I Love You More தங்க புள்ள 💖😽😘🫂🫀✨</div>
+</div>
+
+<!-- JAVASCRIPT -->
+<script>
+    function openModal() {
+        const modal = document.getElementById('modal');
+        modal.classList.add('show');
+    }
+
+    function closeModal() {
+        const modal = document.getElementById('modal');
+        modal.classList.remove('show');
+    }
+
+    // Close modal if clicked outside
+    window.onclick = function(event) {
+        const modal = document.getElementById('modal');
+        if (event.target === modal) {
+            modal.classList.remove('show');
+        }
+    }
+</script>
+
+</body>
+</html>
